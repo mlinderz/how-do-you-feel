@@ -1,5 +1,7 @@
 //NYTimes API//
 
+
+//Loading buttons and assigning clicking on a button to change the selection//
 console.log("loaded")
 var currentMood = ""
 $(".moodButton").on("click", function (){
@@ -7,8 +9,9 @@ $(".moodButton").on("click", function (){
 var newMood =  $(this).val()
 currentMood = newMood
 getArticles(newMood)
-
 })
+
+
 var nytAPIkey = "2GYuC8miX6UGJhKCRRCA5GG1y4ct5DMi"
 
 function getArticles (mood){
