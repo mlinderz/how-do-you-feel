@@ -1,3 +1,5 @@
+//NYTimes API//
+
 console.log("loaded")
 var currentMood = ""
 $(".moodButton").on("click", function (){
