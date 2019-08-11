@@ -4,13 +4,13 @@
   text-align: left;
 }
 
-
-body {
-  background-color: #c7f0db;
+.navbar{
+  font-family: 'Montserrat', sans-serif;
 }
 
-
-
+body {
+  background-color: #fcf9ec
+}
 
 .lead {
   text-align: justify;
@@ -63,5 +63,41 @@ body {
   /* Change the background color of the dropdown button when the dropdown content is shown */
   .dropdown:hover .dropbtn {background-color: #292e29;}
 .navbar {
-    background-color: #292e29;
+    background-color: #b0f4e6;
+}
+
+.btn {
+  padding: 40px;
+}
+.btn:hover {
+  background-color: #fcf9ec;
+}
+
+.moodButtons {
+  padding: 30px;
+}
+.moodButtons:hover {
+  background-color: #fcf9ec;
+}
+
+.mt-5{
+  font-size: 50px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.mt-6 {
+  font-size: 10px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.lead {
+  padding-top: 50px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+}
+
+.rebalancing-question {
+  padding-top: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
 }
