@@ -1,9 +1,29 @@
 /* navbar */
 
+.mt-5 {
+  text-align: left;
+}
+
+
+body {
+  background-color: #c7f0db;
+}
+
+
+
+
+.lead {
+  text-align: justify;
+}
+
+.dropdown-content {
+  text-align: center;
+  float: left;
+}
 
 /* Dropdown Button */
 .dropbtn {
-    background-color: #4CAF50;
+    background-color: #292e29;
     color: white;
     padding: 16px;
     font-size: 16px;
@@ -41,7 +61,7 @@
   .dropdown:hover .dropdown-content {display: block;}
   
   /* Change the background color of the dropdown button when the dropdown content is shown */
-  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+  .dropdown:hover .dropbtn {background-color: #292e29;}
 .navbar {
-    background-color: green
+    background-color: #292e29;
 }

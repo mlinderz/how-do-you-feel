@@ -7,12 +7,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-
+  <!-- Title  -->
+  <title>Reading</title>
   <!-- Bootstrap CSS CDN  -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
-
   <!-- Font Awesome CSS Icons (For cool glyphicons) -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+  <!-- Custom CSS -->
+  <link href="assets/css/style.css" rel="stylesheet">
 
   <!-- Style to fix the issue of text extending past card length -->
   <style>
@@ -29,9 +31,9 @@
 <body>
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light static-top">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
     <div class="container">
-      <strong><a class="navbar-brand" href="#index.html">Rebalance</a></strong>
+      <strong><a class="navbar-brand" href="#">Rebalancing</a></strong>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
         aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -41,8 +43,8 @@
           <li class="nav-item">
             <a class="nav-link" href="index.html">Home</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="reading.html">Reading</a>
+          <li class="nav-item active">
+            <a class="nav-link" href="nyt-articles.html">Reading</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="music.html">Music</a>
@@ -57,6 +59,23 @@
       </div>
     </div>
   </nav>
+
+  <!-- Page Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="mt-5">Ignite your creativity or just chill...</h2>
+        <p class="lead">While the hobby is plenty entertaining, scientists and doctors have observed several
+          positive effects from <strong>reading</strong>. It inspires creativity and offers plenty of incentives, such
+          as stimulating your brain to relax and temporarily transport
+          itself to another world.
+        </p>
+        <br>
+        <!-- Button to load random articles from NYT -->
+        <button onclick="window.location.href = '#';">Let's read!</button>
+      </div>
+    </div>
+  </div>
 
   <!-- Main Bootstrap Search -->
   <div class="container">
