@@ -9,7 +9,8 @@
 }
 
 body {
-  background-color: #fcf9ec
+  background-color: #fcf9ec;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .lead {
