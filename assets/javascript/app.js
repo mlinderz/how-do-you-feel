@@ -4,12 +4,11 @@
 //Loading buttons and assigning clicking on a button to change the selection//
 console.log("loaded")
 var currentMood = ""
-$(".moodButton").on("click", function (){
+$(".moodButtonstoRead").on("click", function (){
     console.log("Mood Changed")
 var newMood =  $(this).val()
 currentMood = newMood
 getArticles(newMood)
-getVideo(newMood)
 })
 
 

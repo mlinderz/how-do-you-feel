@@ -83,6 +83,12 @@ body {
   background-color: #fcf9ec;
 }
 
+.moodButtonstoRead {
+  padding: 30px;
+}
+.moodButtonstoRead:hover {
+  background-color: #fcf9ec;
+
 .mt-5{
   font-size: 50px;
   font-family: 'Montserrat', sans-serif;
@@ -101,6 +107,12 @@ body {
 
 .rebalancing-question {
   padding-top: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+}
+
+.rebalancing-question {
+  padding-top: 5px;
   font-family: 'Montserrat', sans-serif;
   font-size: 30px;
 }
