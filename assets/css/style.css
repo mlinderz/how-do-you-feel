@@ -1,5 +1,9 @@
 /* navbar */
 
+body{
+  background-image: url(/assets/images/relax.jpg)
+}
+
 .mt-5 {
   text-align: left;
 }
@@ -11,6 +15,7 @@
 body {
   background-color: #fcf9ec;
   font-family: 'Montserrat', sans-serif;
+  background-image: url(/assets/images/relax.jpg)
 }
 
 .lead {
