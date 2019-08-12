@@ -8,7 +8,6 @@
 body {
   background-color: #fcf9ec;
   font-family: 'Montserrat', sans-serif;
-  background-image: url(/assets/images/relax.jpg)
 }
 
 .lead {
@@ -61,8 +60,9 @@ body {
   
   /* Change the background color of the dropdown button when the dropdown content is shown */
   .dropdown:hover .dropbtn {background-color: #292e29;}
+
 .navbar {
-    background-color: #b0f4e6;
+  background-color: #b0f4e6;
 }
 
 .btn {
@@ -75,6 +75,7 @@ body {
 .moodButtons {
   padding: 30px;
 }
+
 .moodButtons:hover {
   background-color: #fcf9ec;
 }
@@ -82,6 +83,7 @@ body {
 .moodButtonstoRead {
   padding: 30px;
 }
+
 .moodButtonstoRead:hover {
   background-color: #fcf9ec;
 }
@@ -103,6 +105,13 @@ body {
   font-size: 20px;
 }
 
+.lead-nytimes {
+  padding-top: 40px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  text-align: justify;
+}
+
 .rebalancing-question {
   padding-top: 10px;
   font-family: 'Montserrat', sans-serif;
@@ -110,7 +119,14 @@ body {
 }
 
 .topic-question {
-  padding-top: 5px;
   font-family: 'Montserrat', sans-serif;
   font-size: 30px;
+}
+
+#aricles{
+  text-align: justify;
+}
+
+p {
+  text-align: justify;
 }
