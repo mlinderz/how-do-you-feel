@@ -1,10 +1,6 @@
 /* navbar */
 
 
-.mt-5 {
-  text-align: left;
-}
-
 .navbar{
   font-family: 'Montserrat', sans-serif;
 }
@@ -88,9 +84,11 @@ body {
 }
 .moodButtonstoRead:hover {
   background-color: #fcf9ec;
+}
 
-.mt-5{
-  font-size: 50px;
+.mt-5 {
+  text-align: left;
+  font-size: 40px;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -111,7 +109,7 @@ body {
   font-size: 30px;
 }
 
-.rebalancing-question {
+.topic-question {
   padding-top: 5px;
   font-family: 'Montserrat', sans-serif;
   font-size: 30px;
