@@ -19,18 +19,6 @@
     <link href="assets/css/style.css" rel="stylesheet">
   </head>
 
-  <!-- Style to fix the issue of text extending past card length -->
-  <style>
-    .card-body a {
-      word-break: break-all;
-    }
-
-    .articleHeadline {
-      line-height: 1.5;
-    }
-  </style>
-</head>
-
 <body>
 
   <!-- Navigation -->
@@ -44,12 +32,10 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.html">Home
-              <span class="sr-only">(current)</span>
-            </a>
-          </li>
           <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item active">
             <a class="nav-link" href="nyt-articles.html">Reading</a>
           </li>
           <li class="nav-item">
@@ -70,120 +56,36 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
-        <h2 class="mt-5">Ignite your creativity or just chill...</h2>
-        <p class="lead">While the hobby is plenty entertaining, scientists and doctors have observed several
-          positive effects from <strong>reading</strong>. It inspires creativity and offers plenty of incentives, such
-          as stimulating your brain to relax and temporarily transport
-          itself to another world.
-        </p>
-        <br>
-        <!-- Button to load random articles from NYT -->
-        <button onclick="window.location.href = '#';">Let's read!</button>
-      </div>
-    </div>
-  </div>
+        <h2 class="mt-5">How are you feeling?</h2><br>
+        <p class="rebalancing-question"></p><br>Ready for some enjoyable moments and "rebalancing"? Choose the method you would prefer...<br>
 
-  <!-- Main Bootstrap Search -->
-  <div class="container">
-    <!-- Row for Searching New York Times -->
-    <div class="row">
-      <div class="col-sm-12">
-        <br>
-        <!-- First card is for handling the search parameters -->
-        <div class="card">
-          <div class="card-header">
-            <strong>
-              <i class="fa fa-list-alt"></i> Search Parameters</strong>
-          </div>
-          <div class="card-body">
+        <a href="" button class="moodButtons"><i class="far fa-smile-beam fa-9x" style="color:#67eaca;"></i></button>
+        <a href="" button class="moodButtons"><i class="fas fa-frown fa-9x" style="color:#67eaca;"></i></button>
+        <a href="" button class="moodButtons"><i class="fas fa-meh fa-9x" style="color:#67eaca;"></i></button>
+        <a href="" button class="moodButtons"><i class="fas fa-angry fa-9x" style="color:#67eaca;"></i></button><br></a>
+        <button class="moodButton" value= "happy">happy</button>
+<button class="moodButton" value= "relaxed">relaxed</button>
+<button class="moodButton" value= "sad">sad</button>
+<button class="moodButton" value= "upbeat">upbeat</button>
+<button class="moodButton" value= "wellness">wellness</button>
 
-            <!-- Here we create an HTML Form for handling the inputs-->
-            <form role="form">
+<div id="articles"></div>
 
-              <!-- Here we create the text box for capturing the search term-->
-              <div class="form-group">
-                <label for="search">Search Term:</label>
-                <input type="text" class="form-control" id="search-term">
-              </div>
-
-              <!-- Here we capture the number of records that the user wants to retrieve  -->
-              <div class="form-group">
-                <label for="pwd">Number of Records to Retrieve:</label>
-                <select id="article-count" class="custom-select" aria-labelledby="dropdownMenuButton">
-                  <option selected value="1">1</option>
-                  <!-- Setting the option for 5 as default -->
-                  <option value="5" selected>5</option>
-                  <option value="10">10</option>
-                </select>
-              </div>
-
-              <!-- Here we capture the Start Year Parameter-->
-              <div class="form-group">
-                <label for="start-year">Start Year (Optional):</label>
-                <input type="text" class="form-control" id="start-year">
-              </div>
-
-              <!-- Here we capture the End Year Parameter -->
-              <div class="form-group">
-                <label for="end-year">End Year (Optional):</label>
-                <input type="text" class="form-control" id="end-year">
-              </div>
-
-              <!-- Here we have our final submit button -->
-              <button type="submit" class="btn btn-default" id="run-search">
-                <i class="fa fa-search"></i> Search</button>
-              <button class="btn btn-default" id="clear-all">
-                <i class="fa fa-trash"></i> Clear Results</button>
-
-            </form>
+        <p class="lead">Your mood is determined by your thoughts, reactions and responses. We invite you to enjoy fun
+          ways to clear your mind from negative or stressful thoughts, so you can begin
+          to focus on making choices that can largely improve many aspects of your life.</a></p>
+        <p class="rebalancing-question"></p><br>Ready for some enjoyable moments and "rebalancing"? Choose the method you would prefer...<br>
+        </p><br>
           </div>
         </div>
       </div>
     </div>
-
-    <!-- This row will handle all of the retrieved articles -->
-    <div class="row">
-      <div class="col-sm-12">
-        <br>
-
-        <!-- This card will initially be made up of a card and wells for each of the articles retrieved -->
-        <div class="card">
-
-          <!-- card Heading for the retrieved articles box -->
-          <div class="card-header">
-            <strong>
-              <i class="fa fa-table"></i> Top Articles</strong>
-          </div>
-
-          <!-- This main card will hold each of the resulting articles -->
-          <div class="card-body" id="article-section">
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Footer Region -->
-    <div class="row">
-      <div class="col-sm-12">
-
-        <!-- Line Break followed by closing -->
-        <hr>
-        <h5 class="text-center">
-          <small>Made with lots and lots of
-            <i class="fa fa-heart"></i>
-          </small>
-        </h5>
-
-      </div>
-    </div>
-
   </div>
-
   <!-- jQuery JS -->
   <script src="https://code.jquery.com/jquery.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
   <!-- Code to the JavaScript File -->
-  <script src="Assets/js/nyt-articles-script.js"></script>
+  <script src="Assets/javascript/app.js"></script>
 
 </body>
 
