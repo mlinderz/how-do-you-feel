@@ -6,8 +6,9 @@
 }
 
 body {
-  background-color: #fcf9ec;
   font-family: 'Montserrat', sans-serif;
+  background: url(/assets/images/relax.jpg);
+  background-size: cover;
 }
 
 .lead {
