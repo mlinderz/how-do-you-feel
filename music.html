@@ -22,7 +22,7 @@
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
     <div class="container">
       <!-- logo -->
-      <strong><a class="navbar-brand" href="#">Rebalancing  <i class="fas fa-balance-scale"></i></a></strong>
+      <strong><a class="navbar-brand" href="index.html">Rebalancing  <i class="fas fa-balance-scale"></i></a></strong>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
         aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -64,13 +64,23 @@
         </p>
         <br>
         <!-- Button to load music content for the API -->
-        <button onclick="window.location.href = '#';">Let's listen to some inspiring music</button>
+        <!-- Buttons to load music content for the API -->
+        <h2>How are you feeling?</h2><br>
+        <a button class="moodButtons" id ="smile"><i class="far fa-smile-beam fa-5x" style="color:#67eaca;"></i></button>
+        <a button class="moodButtons" id ="meh"><i class="fas fa-meh fa-5x" style="color:#67eaca;"></i></button>
+        <a button class="moodButtons" id ="angry"><i class="fas fa-angry fa-5x" style="color:#67eaca;"></i></button>
+        <a button class="moodButtons" id ="frown"><i class="fas fa-frown fa-5x" style="color:#67eaca;"></i></button><br></a>
+        <br>
+        <div id = "video-content"></div>
       </div>
     </div>
   </div>
 
   <!-- Bootstrap core JavaScript -->
-  <!-- jQuery, Popper.js, Bootstrap JS -->
+  <!-- jQuery, Popper.js, Bootstrap JS, ajax-->
+  <!-- firebase -->
+  <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-app.js"></script>
+
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
@@ -80,9 +90,11 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  
 
   <!-- Custom JavaScript -->
-  <script src="assets/js/script.js"></script>
+  <script src="assets/javascript/music.js"></script>
 
 </body>
 
