@@ -6,9 +6,12 @@
 }
 
 body {
-  background-color: #fcf9ec;
   font-family: 'Montserrat', sans-serif;
+  background-image: url(/assets/images/relax.jpg);
+  background-size: cover;
+  background-color: #fcf9ec;
 }
+
 
 .lead {
   text-align: justify;
@@ -67,6 +70,7 @@ body {
 
 .btn {
   padding: 40px;
+  
 }
 .btn:hover {
   background-color: #fcf9ec;
