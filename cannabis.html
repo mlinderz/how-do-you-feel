@@ -2,20 +2,21 @@
 <html lang="en">
 
 <head>
-<!-- Meta tags  -->
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="description" content="">
-<meta name="author" content="">
-<!-- Title  -->
-<title>Rebalancing</title>
-<!-- Bootstrap CSS CDN  -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
-<!-- Font Awesome CSS Icons (For cool glyphicons) -->
-<script src="https://kit.fontawesome.com/93b318eb02.js"></script>
-<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-<!-- Custom CSS -->
-<link href="assets/css/style.css" rel="stylesheet">
+    <!-- Meta tags  -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Title  -->
+    <title>Rebalancing</title>
+    <!-- Bootstrap CSS CDN  -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
+    <!-- Font Awesome CSS Icons (For cool glyphicons) -->
+    <script src="https://kit.fontawesome.com/93b318eb02.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="assets/css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -23,7 +24,8 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-info static-top">
         <div class="container">
             <!-- logo -->
-            <strong><a class="navbar-brand" href="index.html">Rebalancing  <i class="fas fa-balance-scale"></i></a></strong>
+            <strong><a class="navbar-brand" href="index.html">Rebalancing <i
+                        class="fas fa-balance-scale"></i></a></strong>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -70,21 +72,28 @@
                 <br>
                 <!-- Button to load content on cannabis-derived products for wellness the "weed API -->
                 <h2>How are you feeling?</h2><br>
-                <a button class="moodButtons" id ="smile" data-type="happy"><i class="far fa-smile-beam fa-5x" style="color:#67eaca;"></i></button>
-                <a button class="moodButtons" id ="meh" data-type="euphoric"><i class="fas fa-meh fa-5x" style="color:#67eaca;"></i></button>
-                <a button class="moodButtons" id ="angry" data-type="relaxed"><i class="fas fa-angry fa-5x" style="color:#67eaca;"></i></button>
-                <a button class="moodButtons" id ="frown" data-type="uplifted"><i class="fas fa-frown fa-5x" style="color:#67eaca;"></i></button><br></a>
-                <br>   
-                <div id="displayPic"></div><br>
-                <h2><div id="displayName"></div></h2>     
-                <br> 
-                <div id="displayInfo"></div><br>
-                <div id="eaze"></div><br><br>
+                <a button class="moodButtons" id="smile" data-type="happy"><i class="far fa-smile-beam fa-5x"
+                        style="color:#67eaca;"></i></button>
+                    <a button class="moodButtons" id="meh" data-type="euphoric"><i class="fas fa-meh fa-5x"
+                            style="color:#67eaca;"></i></button>
+                        <a button class="moodButtons" id="angry" data-type="relaxed"><i class="fas fa-angry fa-5x"
+                                style="color:#67eaca;"></i></button>
+                            <a button class="moodButtons" id="frown" data-type="uplifted"><i class="fas fa-frown fa-5x"
+                                    style="color:#67eaca;"></i></button><br></a>
+                            <br>
+                            <div id="displayPic"></div><br>
+                            <h2>
+                                <div id="displayName"></div>
+                            </h2>
+                            <br>
+                            <div id="displayInfo"></div><br>
+                            <div id="eaze"></div><br><br>
 
             </div>
         </div>
     </div>
-
+    <!-- firebase -->
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
     <!-- Bootstrap core JavaScript -->
     <!-- jQuery, Popper.js, Bootstrap JS , ajax -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

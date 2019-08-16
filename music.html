@@ -1,28 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Meta tags  -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <!-- Title  -->
-    <title>Rebalancing</title>
-    <!-- Bootstrap CSS CDN  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
-    <!-- Font Awesome CSS Icons (For cool glyphicons) -->
-    <script src="https://kit.fontawesome.com/93b318eb02.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link href="assets/css/style.css" rel="stylesheet">
-  </head>
+
+<head>
+  <!-- Meta tags  -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <!-- Title  -->
+  <title>Rebalancing</title>
+  <!-- Bootstrap CSS CDN  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
+  <!-- Font Awesome CSS Icons (For cool glyphicons) -->
+  <script src="https://kit.fontawesome.com/93b318eb02.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
 
 <body>
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-info static-top">
-    <div class="container">
+      <div class="container">
       <!-- logo -->
-      <strong><a class="navbar-brand" href="index.html">Rebalancing  <i class="fas fa-balance-scale"></i></a></strong>
+      <strong><a class="navbar-brand" href="index.html">Rebalancing <i class="fas fa-balance-scale"></i></a></strong>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
         aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -66,12 +67,13 @@
         <!-- Button to load music content for the API -->
         <!-- Buttons to load music content for the API -->
         <h2>How are you feeling?</h2><br>
-        <a button class="moodButtons" id ="smile"><i class="far fa-smile-beam fa-5x" style="color:#67eaca;"></i></button>
-        <a button class="moodButtons" id ="meh"><i class="fas fa-meh fa-5x" style="color:#67eaca;"></i></button>
-        <a button class="moodButtons" id ="angry"><i class="fas fa-angry fa-5x" style="color:#67eaca;"></i></button>
-        <a button class="moodButtons" id ="frown"><i class="fas fa-frown fa-5x" style="color:#67eaca;"></i></button><br></a>
-        <br>
-        <div id = "video-content"></div>
+        <a button class="moodButtons" id="smile"><i class="far fa-smile-beam fa-5x" style="color:#67eaca;"></i></button>
+          <a button class="moodButtons" id="meh"><i class="fas fa-meh fa-5x" style="color:#67eaca;"></i></button>
+            <a button class="moodButtons" id="angry"><i class="fas fa-angry fa-5x" style="color:#67eaca;"></i></button>
+              <a button class="moodButtons" id="frown"><i class="fas fa-frown fa-5x"
+                  style="color:#67eaca;"></i></button><br></a>
+              <br>
+              <div id="video-content"></div>
       </div>
     </div>
   </div>
@@ -79,7 +81,7 @@
   <!-- Bootstrap core JavaScript -->
   <!-- jQuery, Popper.js, Bootstrap JS, ajax-->
   <!-- firebase -->
-  <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -90,8 +92,8 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 
   <!-- Custom JavaScript -->
   <script src="assets/javascript/music.js"></script>
