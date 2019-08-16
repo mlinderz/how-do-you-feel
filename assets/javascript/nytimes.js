@@ -23,15 +23,28 @@ $.ajax({
     console.log(response)
 
 var articles = response.response.docs
-for (var i=0; i<articles.length; i++){
-    $("#articles").append(
-        "<p>"+ articles[i].headline.main+articles[i].web_url+articles[i].lead_paragraph+ "</p>"
+for (var i=0; i<3; i++){
+        var articleDiv = $("<div class= 'article'>")
+        var articleTitle = $("<h2>")
+        var articleParagraph = $("<p>")
+
+        $("#articles").append(
+        articleTitle.text(articles[i].headline.main),
+        articleParagraph.text(articles[i].lead_paragraph),
+        articleDiv.append(articleTitle),
+        articleDiv.append(articleParagraph),
+        articleDiv.append("<button id = 'finished' onclick= \"window.open(\'" + articles[i].web_url+ "\',\'_blank\')\">Click to Read More</button>"),
     )
 }
 
 })
 
 }
+$(document).on('click', "#finished", function(){
+    console.log("finished")
+    window.location.href="finish.html"
+})
+
 //firebase starts here//
 var firebaseConfig = {
     apiKey: "AIzaSyCj20bQaHGBV-u_tOPHCzt2ECdj3mWnnT4",

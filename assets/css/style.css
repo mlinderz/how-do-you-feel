@@ -138,7 +138,7 @@ body {
   font-size: 30px;
 }
 
-#aricles{
+#articles{
   text-align: justify;
 }
 
@@ -148,4 +148,8 @@ p {
 
 i {
   padding: 20px;
+}
+
+.article{
+  padding-bottom: 32px;
 }

@@ -11,7 +11,7 @@ $('#smile').on('click', function () {
   }).then(function (result) {
     console.log(result.mvids[1].strMusicVid);
     var musicVidlink = result.mvids[17].strMusicVid;
-    var youtubeLink = "<button onclick= \"window.open(\'" + musicVidlink + "\',\'_blank\')\">Let's listen to some Queen?</button>";
+    var youtubeLink = "<button id = 'finished' onclick= \"window.open(\'" + musicVidlink + "\',\'_blank\')\">Let's listen to some Queen?</button>";
     clearBtns();
     $('#video-content').append(youtubeLink);
   });
@@ -26,7 +26,7 @@ $('#meh').on('click', function () {
   }).then(function (result) {
     console.log(result.mvids[1].strMusicVid);
     var musicVidlink = result.mvids[8].strMusicVid;
-    var youtubeLink = "<button onclick= \"window.open(\'" + musicVidlink + "\',\'_blank\')\">Let's listen to some Whitney Houston?</button>";
+    var youtubeLink = "<button id = 'finished' onclick= \"window.open(\'" + musicVidlink + "\',\'_blank\')\">Let's listen to some Whitney Houston?</button>";
     clearBtns();
     $('#video-content').append(youtubeLink);
   });
@@ -41,7 +41,7 @@ $('#angry').on('click', function () {
   }).then(function (result) {
     console.log(result.mvids[1].strMusicVid);
     var musicVidlink = result.mvids[0].strMusicVid;
-    var youtubeLink = "<button onclick= \"window.open(\'" + musicVidlink + "\',\'_blank\')\">Let's listen to some Yiruma?</button>";
+    var youtubeLink = "<button id = 'finished' onclick= \"window.open(\'" + musicVidlink + "\',\'_blank\')\">Let's listen to some Yiruma?</button>";
     clearBtns();
     $('#video-content').append(youtubeLink);
   });
@@ -56,12 +56,16 @@ $('#frown').on('click', function () {
   }).then(function (result) {
     console.log(result.mvids[1].strMusicVid);
     var musicVidlink = result.mvids[7].strMusicVid;
-    var youtubeLink = "<button onclick= \"window.open(\'" + musicVidlink + "\',\'_blank\')\">Let's listen to some Weezer?</button>";
+    var youtubeLink = "<button id = 'finished' onclick= \"window.open(\'" + musicVidlink + "\',\'_blank\')\">Let's listen to some Weezer?</button>";
     clearBtns();
     $('#video-content').append(youtubeLink);
   });
 });
 
+$(document).on('click', "#finished", function(){
+  console.log("finished")
+  window.location.href="finish.html"
+})
 
 //firebase starts here//
 var firebaseConfig = {

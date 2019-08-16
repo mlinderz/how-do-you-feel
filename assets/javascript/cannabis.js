@@ -114,13 +114,18 @@ $('#frown').on('click', function () {
 });
 
 $(".moodButtons").on("click", function () {
-    var eazeBtn = "<button id =\"eazeAway\" onclick= \"window.open(\'http://www.eaze.com\',\'_blank\')\">Get It Delivered?</button>";
+    var eazeBtn = "<button id = 'finished'  id =\"eazeAway\" onclick= \"window.open(\'http://www.eaze.com\',\'_blank\')\">Get It Delivered?</button>";
     $("#eaze").html(eazeBtn);
 
     $("#eazeAway").on("click", function () {
         window.open(href= "index.html");
     });
 });
+
+$(document).on('click', "#finished", function(){
+    console.log("finished")
+    window.location.href="finish.html"
+})
 
 //firebase data to add to each page , change the name of the object (instead of firstMoodWeed)//
 var firebaseConfig = {
