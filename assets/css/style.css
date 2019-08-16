@@ -103,6 +103,20 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+.mt-7 {
+  font-size: 40px;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  font-weight: bold;
+}
+
+.mt-8 {
+  font-size: 40px;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  font-weight: bold;
+}
+
 .lead {
   padding-top: 50px;
   font-family: 'Montserrat', sans-serif;

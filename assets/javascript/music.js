@@ -1,3 +1,7 @@
+function clearBtns(){
+  $("#video-content").empty();
+}
+
 $('#smile').on('click', function(){
   var artist = "111238"
   var queryADB = "http://theaudiodb.com/api/v1/json/195003/mvid.php?i=" + artist ;
@@ -9,6 +13,7 @@ $('#smile').on('click', function(){
     var musicVidlink = result.mvids[17].strMusicVid;
     var youtubeLink = "<button onclick= \"window.open(\'" + musicVidlink + "\',\'_blank\')\">Let's listen to some Queen?</button>";
     $('#video-content').append(youtubeLink); 
+    function clearBtns()
     });
   });
 
@@ -23,6 +28,7 @@ $('#smile').on('click', function(){
       var musicVidlink = result.mvids[8].strMusicVid;
       var youtubeLink = "<button onclick= \"window.open(\'" + musicVidlink + "\',\'_blank\')\">Let's listen to some Whitney Houston?</button>";
       $('#video-content').append(youtubeLink); 
+      function clearBtns()
       });
     });
 
@@ -51,6 +57,7 @@ $('#smile').on('click', function(){
           var musicVidlink = result.mvids[7].strMusicVid;
           var youtubeLink = "<button onclick= \"window.open(\'" + musicVidlink + "\',\'_blank\')\">Let's listen to some Weezer?</button>";
           $('#video-content').append(youtubeLink); 
+
           // $("button").on("click", function(){
           //   *clear buttons*
           // });
