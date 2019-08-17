@@ -1,18 +1,15 @@
 /* navbar */
 
 
-.navbar{
+.navbar  {
   font-family: 'Montserrat', sans-serif;
 }
 
 body {
   font-family: 'Montserrat', sans-serif;
-  /* background: url(../images/relax.jpg); */
   background-size: cover;
-}
-
-.lead {
-  text-align: justify;
+  background-color: #fcf9ec;
+  text-align: center;
 }
 
 .dropdown-content {
@@ -82,7 +79,8 @@ body {
 }
 
 .moodButtonstoRead {
-  padding: 30px;
+  padding: 0px;
+  align-content: center;
 }
 
 .moodButtonstoRead:hover {
@@ -108,7 +106,8 @@ body {
 }
 
 .mt-8 {
-  font-size: 15px;
+  padding-top: 40px;
+  font-size: 40px;
   font-family: 'Montserrat', sans-serif;
   text-align: center;
 }
@@ -117,10 +116,11 @@ body {
   padding-top: 30px;
   font-family: 'Montserrat', sans-serif;
   font-size: 20px;
+  text-align: justify;
 }
 
 .lead-nytimes {
-  padding-top: 40px;
+  padding-top: 20px;
   font-family: 'Montserrat', sans-serif;
   font-size: 20px;
   text-align: justify;
@@ -136,6 +136,8 @@ body {
 .topic-question {
   font-family: 'Montserrat', sans-serif;
   font-size: 30px;
+  text-align: center;
+  padding-top: 0px;
 }
 
 #articles{
@@ -153,3 +155,4 @@ i {
 .article{
   padding-bottom: 32px;
 }
+
