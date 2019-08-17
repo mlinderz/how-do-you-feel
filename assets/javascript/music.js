@@ -2,14 +2,15 @@ function clearBtns() {
   $("#video-content").empty();
 }
 
+var queryADBLink = "http://theaudiodb.com/api/v1/json/195003/mvid.php?i=";
+var artist = [111238, 112696, 132793, 112646];
+
 $('#smile').on('click', function () {
-  var artist = "111238"
-  var queryADB = "http://theaudiodb.com/api/v1/json/195003/mvid.php?i=" + artist;
+  var queryADB = queryADBLink + artist[0];
   $.ajax({
     url: queryADB,
     method: "GET"
   }).then(function (result) {
-    console.log(result.mvids[1].strMusicVid);
     var musicVidlink = result.mvids[17].strMusicVid;
     var youtubeLink = "<button id = 'finished' onclick= \"window.open(\'" + musicVidlink + "\',\'_blank\')\">Let's listen to some Queen?</button>";
     clearBtns();
@@ -18,13 +19,11 @@ $('#smile').on('click', function () {
 });
 
 $('#meh').on('click', function () {
-  var artist = "112696"
-  var queryADB = "http://theaudiodb.com/api/v1/json/195003/mvid.php?i=" + artist;
+  var queryADB = queryADBLink + artist[1];
   $.ajax({
     url: queryADB,
     method: "GET"
   }).then(function (result) {
-    console.log(result.mvids[1].strMusicVid);
     var musicVidlink = result.mvids[8].strMusicVid;
     var youtubeLink = "<button id = 'finished' onclick= \"window.open(\'" + musicVidlink + "\',\'_blank\')\">Let's listen to some Whitney Houston?</button>";
     clearBtns();
@@ -33,13 +32,11 @@ $('#meh').on('click', function () {
 });
 
 $('#angry').on('click', function () {
-  var artist = "132793"
-  var queryADB = "http://theaudiodb.com/api/v1/json/195003/mvid.php?i=" + artist;
+  var queryADB = queryADBLink + artist[2];
   $.ajax({
     url: queryADB,
     method: "GET"
   }).then(function (result) {
-    console.log(result.mvids[1].strMusicVid);
     var musicVidlink = result.mvids[0].strMusicVid;
     var youtubeLink = "<button id = 'finished' onclick= \"window.open(\'" + musicVidlink + "\',\'_blank\')\">Let's listen to some Yiruma?</button>";
     clearBtns();
@@ -48,13 +45,11 @@ $('#angry').on('click', function () {
 });
 
 $('#frown').on('click', function () {
-  var artist = "112646"
-  var queryADB = "http://theaudiodb.com/api/v1/json/195003/mvid.php?i=" + artist;
+  var queryADB = queryADBLink + artist[3];
   $.ajax({
     url: queryADB,
     method: "GET"
   }).then(function (result) {
-    console.log(result.mvids[1].strMusicVid);
     var musicVidlink = result.mvids[7].strMusicVid;
     var youtubeLink = "<button id = 'finished' onclick= \"window.open(\'" + musicVidlink + "\',\'_blank\')\">Let's listen to some Weezer?</button>";
     clearBtns();
@@ -62,9 +57,8 @@ $('#frown').on('click', function () {
   });
 });
 
-$(document).on('click', "#finished", function(){
-  console.log("finished")
-  window.location.href="finish.html"
+$(document).on('click', "#finished", function () {
+  window.location.href = "finish.html"
 })
 
 //firebase starts here//
@@ -84,7 +78,6 @@ var newDB = firebase.database();
 
 $('.moodButtons').on('click', function () {
   var selectedMood = $(this).attr("id");
-  console.log(selectedMood);
 
   newDB.ref().push({
     firstMoodMusic: selectedMood
